@@ -8,6 +8,14 @@
   ],
   "routes": [
     {
+      "src": "/health",
+      "dest": "/api/health.js"
+    },
+    {
+      "src": "/api/notify",
+      "dest": "/api/notify.js"
+    },
+    {
       "src": "/(.*)",
       "dest": "/api/notify.js"
     }

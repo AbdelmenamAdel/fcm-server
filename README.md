@@ -35,6 +35,18 @@ To test the Vercel server locally, you can use the Vercel CLI.
 
 ## 4. Deploy to Vercel
 
+After deployment, your production API URL will be:
+
+```text
+https://<your-vercel-project>.vercel.app/api/notify
+```
+
+A health check endpoint will also be available at:
+
+```text
+https://<your-vercel-project>.vercel.app/health
+```
+
 1. Log into Vercel using the CLI:
    ```bash
    vercel login

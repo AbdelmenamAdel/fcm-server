@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "FCM Serverless Backend for Azkary",
   "main": "api/notify.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
-    "start": "vercel dev"
+    "start": "vercel dev",
+    "dev": "vercel dev",
+    "check": "node --check api/notify.js"
   },
   "dependencies": {
     "firebase-admin": "^12.0.0"
