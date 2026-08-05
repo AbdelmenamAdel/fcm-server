@@ -162,6 +162,9 @@ module.exports = async (req, res) => {
       },
       android: {
         priority: 'high',
+        notification: {
+          channel_id: 'posts_channel_v31',
+        },
       },
       apns: {
         headers: {
@@ -169,7 +172,7 @@ module.exports = async (req, res) => {
         },
         payload: {
           aps: {
-            sound: 'default',
+            sound: 'post_sound.mp3',
             'content-available': 1,
           },
         },
